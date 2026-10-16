@@ -1,1 +1,11 @@
+# Mission 8: The Cloud Security Engineer — Reflection
 
+Completing Mission 8 taught me that protecting a cloud server is an important part of managing a secure computing environment. I learned that a server needs proper security settings before it can safely handle network connections. Through this activity, I used UFW (Uncomplicated Firewall) to control which connections could enter the Ubuntu server. This helped me understand how a firewall can reduce the risk of unauthorized access.
+
+One of the most important things I learned was how to apply the Default Deny policy. By blocking incoming connections by default and allowing outgoing connections, the server becomes less exposed to unwanted network traffic. I also added a rule for SSH, which uses port 22, so that remote administration could remain possible. Checking the firewall status using `sudo ufw status verbose` helped me verify whether the configuration was active and whether the expected rules were present.
+
+I also realized that opening too many ports can create security problems. Every accessible service may become a potential target if it contains vulnerabilities or is not properly maintained. For example, exposing a database directly to the public internet can put important information at risk. Database access should therefore be limited to trusted systems and authorized users. Firewall rules must be based on the actual needs of the server rather than allowing connections without a clear purpose.
+
+This mission helped me appreciate the importance of checking configurations instead of assuming that everything is secure after installation. Even a simple mistake in firewall settings can affect the server's security or prevent administrators from connecting remotely. I learned to establish the necessary rules first, enable the firewall, and inspect its status afterward.
+
+Overall, Mission 8 improved my knowledge of Linux server administration and cloud security. It also reminded me that security is an ongoing responsibility that requires regular monitoring and careful decision-making. As I continue building my GitHub Cloud Computing portfolio, I will apply these lessons by documenting my commands, checking my results, and following security best practices in future laboratory activities.
